@@ -16,12 +16,13 @@
 [![Alt text](http://i3.ytimg.com/vi/XWzKtZcDmKU/maxresdefault.jpg)](https://www.youtube.com/watch?v=XWzKtZcDmKU)
 
 ### Installation Guidelines:
+
 1. Clone the GITS repository <br/>
 2. Navigate inside GITS folder and enter the following command: <br/> `pip install -r requirements.txt` <br/>
-3. Navigate inside the configurations folder and run the folllowing commands: <br/> 
+3. Navigate inside the configurations folder and run the folllowing commands: <br/>
 - `chmod +x project_init.sh` <br/> 
 - `./project_init.sh` <br/> 
-- `source .bashrc` <br/>
+- `source ~/.bashrc` <br/>
 4. Run `gits hello_world` from any directory. If you end up getting a welcome msg you're good to go! <br/>
 
 ### Supported functionality
@@ -111,8 +112,8 @@ This repository is made for CSC 510 Software Engineering Course at NC State Univ
 
 Group 15 Team Members: 
 
-* Steve Victor Menezes
-* Durga Devi Mummadi
-* Bhavesh Shailesh Agrawal
-* Nikitha Thotireddy
-* Aadil Anwar Khan
+* Rohan Prabhune
+* Swetha Gavini
+* Arjun Madhusudan
+* Ramya Sai Mullapudi
+* Krishna Saurabh
