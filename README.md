@@ -110,7 +110,7 @@ If you want Flake8 to be installed for your default Python installation, you can
 
 This repository is made for CSC 510 Software Engineering Course at NC State University.
 
-Group 15 Team Members: 
+Group 5 Team Members: 
 
 * Rohan Prabhune
 * Swetha Gavini
