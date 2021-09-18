@@ -20,10 +20,17 @@
 1. Clone the GITS repository <br/>
 2. Navigate inside GITS folder and enter the following command: <br/> `pip install -r requirements.txt` <br/>
 3. Navigate inside the configurations folder and run the folllowing commands: <br/>
+   The python3 compatible users run the following command: <br/>
+- `chmod +x python3_project_init.sh` <br/> 
+- `./python3_project_init.sh` <br/> 
+   
+   The python or python2 users run the following command:  <br/>
 - `chmod +x project_init.sh` <br/> 
 - `./project_init.sh` <br/> 
+
+4. Update the bashrc file: <br/>
 - `source ~/.bashrc` <br/>
-4. Run `gits hello_world` from any directory. If you end up getting a welcome msg you're good to go! <br/>
+5. Run `gits hello_world` from any directory. If you end up getting a welcome msg you're good to go! <br/>
 
 ### Supported functionality
 
