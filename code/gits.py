@@ -5,6 +5,7 @@ import argparse
 from gits_logging import init_gits_logger
 from gits_hello import gits_hello_world
 from gits_add import gits_add_func
+from gits_mv import gits_mv_func
 from gits_commit import gits_commit_func
 from gits_set import gits_set_func
 from gits_setupstream import upstream
@@ -47,6 +48,14 @@ gits_add_subparser.add_argument('file_names',
                                 help='all file names')
 gits_add_subparser.set_defaults(func=gits_add_func)
 
+gits_mv_subparser = subparsers.add_parser('move')
+gits_mv_subparser.add_argument('input_file',
+                                type=str,
+                                help='File to rename')
+gits_mv_subparser.add_argument('output_file',
+                                type=str,
+                                help='New name of file')
+gits_mv_subparser.set_defaults(func=gits_mv_func)
 
 gits_commit_subparser = subparsers.add_parser('commit')
 gits_commit_subparser.add_argument('-m',
