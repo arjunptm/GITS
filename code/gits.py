@@ -23,6 +23,7 @@ from gits_pr_update import gits_pr_update_func
 from gits_status import gits_status
 from gits_diff import gits_diff
 from gits_sync import gits_sync
+from gits_pull import gits_pull_func
 
 logger_status = init_gits_logger()
 if not logger_status:
@@ -97,6 +98,9 @@ gits_reset_subparser.add_argument('--branch', required=True, help='branch to be 
 
 gits_push_subparser = subparsers.add_parser('push')
 gits_push_subparser.set_defaults(func=gits_push_func)
+
+gits_push_subparser = subparsers.add_parser('pull')
+gits_push_subparser.set_defaults(func=gits_pull_func)
 
 gits_add_subparser = subparsers.add_parser('checkout')
 gits_add_subparser.add_argument('branch_name')
