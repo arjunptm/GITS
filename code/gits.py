@@ -43,7 +43,7 @@ gits_add_subparser = subparsers.add_parser('add')
 gits_add_subparser.add_argument('file_names',
                                 metavar='N',
                                 type=str,
-                                nargs='+',
+                                nargs='*',
                                 help='all file names')
 gits_add_subparser.set_defaults(func=gits_add_func)
 

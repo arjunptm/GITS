@@ -19,12 +19,14 @@ def gits_add_func(args):
         total_files = len(file_names_list)
         if total_files == 0:
             # do nothing
-            pass
+            # print ("ASDASDASD")
+            subprocess_command.append(".")
+            # pass
         else:
             for i in range(0, total_files):
                 subprocess_command.append(file_names_list[i])
-            process = Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
-            stdout, stderr = process.communicate()
+        process = Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
+        stdout, stderr = process.communicate()
 
     except Exception as e:
         gits_logging.gits_logger.error("gits add command caught an exception")
