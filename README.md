@@ -83,7 +83,7 @@ This logs all the commands executed by the user, and also stores the output of e
 This pushes all the local changes of origin to the branch specified. 
 
 #### gits pull
-This pulls the latest content of a remote branch to local branch.
+This pulls the latest content of a remote branch to local branch. Gives the user a choice to select which branch needs to be pulled
 
 #### gits checkout
 This command switches between two branches. The function takes branch name as input and returns True for successful execution or False otherwise with an exception.
