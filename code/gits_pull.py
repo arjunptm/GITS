@@ -10,7 +10,11 @@ def gits_pull_func(args):
         subprocess_command = list()
         subprocess_command.append("git")
         subprocess_command.append("pull")
+
+        #print ('Enter the branch you want to pull from')
+        #branch = input()
         
+        #subprocess_command.append(branch)
         process = Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process.communicate()
 
