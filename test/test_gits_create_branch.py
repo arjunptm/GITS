@@ -3,7 +3,7 @@ import sys
 sys.path.insert(1, os.getcwd())
 
 import argparse
-import gits_create_branch
+from code import gits_create_branch
 from mock import patch, Mock
 
 

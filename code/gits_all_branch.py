@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-import gits_logging
+
 from subprocess import Popen, PIPE
 
 def gits_all_branch_func(args):

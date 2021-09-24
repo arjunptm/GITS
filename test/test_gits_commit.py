@@ -1,9 +1,12 @@
 import argparse
 import os
 import sys
+
+
+
 sys.path.insert(1, os.getcwd())
 
-import gits_commit
+from code import gits_commit
 from mock import patch, Mock
 
 def parse_args(args):
