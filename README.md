@@ -34,9 +34,6 @@
 
 ### Supported functionality
 
-#### gits pull
-This pulls the latest content of a remote branch to local branch.
-
 #### gits pr_update
 This functionality makes sure that the current branch is able to make a PR without much trouble ( conflict ). It makes sure that the current branch has the latest commit off master branch, and that the local master has all the commits from the upstream master. This helps in reducing merge conflicts
 
@@ -84,6 +81,9 @@ This logs all the commands executed by the user, and also stores the output of e
 
 #### gits push
 This pushes all the local changes of origin to the branch specified. 
+
+#### gits pull
+This pulls the latest content of a remote branch to local branch.
 
 #### gits checkout
 This command switches between two branches. The function takes branch name as input and returns True for successful execution or False otherwise with an exception.
