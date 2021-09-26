@@ -53,7 +53,10 @@ This functionality changes the upstream with a single command. No need to manual
 Have you ever run into a situation, where you had to clone the repository again ? Yes, this functionality is exactly for that scenario. It will remove the current repository. It will clone it again, and add all the 'remote' to this freshly cloned repository. 
 
 #### gits add 
-Function that adds files as passed to the gits add command. Performs operation as similar to git add command
+Function that adds files as passed to the gits add command. Performs operation as similar to git add command.
+
+#### gits mv 
+Function that moves/renames a file, while maintaining the file history. Performs operation as similar to git mv command.
 
 #### gits commit
 It is a highly simplified version of git commit command. We are actively working on this functionality such that a commit would fail if the unit tests does not pass. We can specify the tests that need to pass before the commit can actually happen. 
