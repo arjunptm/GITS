@@ -24,6 +24,7 @@ from gits_status import gits_status
 from gits_diff import gits_diff
 from gits_sync import gits_sync
 from gits_pull import gits_pull_func
+from gits_clone import gits_clone_func
 
 logger_status = init_gits_logger()
 if not logger_status:
@@ -105,6 +106,10 @@ gits_push_subparser.set_defaults(func=gits_pull_func)
 gits_add_subparser = subparsers.add_parser('checkout')
 gits_add_subparser.add_argument('branch_name')
 gits_add_subparser.set_defaults(func=checkout)
+
+gits_add_subparser = subparsers.add_parser('clone')
+gits_add_subparser.add_argument('site_url')
+gits_add_subparser.set_defaults(func=gits_clone_func)
 
 gits_add_subparser = subparsers.add_parser('unstage')
 gits_add_subparser.add_argument('file_names',
