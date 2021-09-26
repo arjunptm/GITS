@@ -4,7 +4,7 @@ import sys
 
 sys.path.insert(1, os.getcwd())
 
-from gits_unstage import unstage
+from code.gits_unstage import unstage
 from mock import patch, Mock
 
 def parse_args(args):

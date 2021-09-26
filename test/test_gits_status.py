@@ -3,7 +3,7 @@ import sys
 sys.path.insert(1, os.getcwd())
 
 import argparse
-import gits_status
+from code import gits_status
 from mock import patch, Mock
 
 def parse_args(args):

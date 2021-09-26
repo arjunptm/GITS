@@ -5,7 +5,7 @@ import shutil
 
 sys.path.insert(1, os.getcwd())
 
-from gits_init import gits_init_func
+from code.gits_init import gits_init_func
 from mock import patch
 
 
