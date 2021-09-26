@@ -1,9 +1,10 @@
 import os
 import sys
+
 sys.path.insert(1, os.getcwd())
 
 import argparse
-import gits_add
+from code import gits_add
 from mock import patch
 
 

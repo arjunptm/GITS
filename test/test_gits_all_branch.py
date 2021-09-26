@@ -1,9 +1,12 @@
 import os
 import sys
+
+
+
 sys.path.insert(1, os.getcwd())
 
 import argparse
-import gits_all_branch
+from code import gits_all_branch
 from mock import patch, Mock
 
 def parse_args(args):

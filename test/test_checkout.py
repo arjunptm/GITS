@@ -2,11 +2,11 @@ import argparse
 import os
 import sys
 
+
 sys.path.insert(1, os.getcwd())
 
-from gits_checkout import checkout
+from code.gits_checkout import checkout
 from mock import patch, Mock
-
 
 def parse_args(args):
     parser = argparse.ArgumentParser()
