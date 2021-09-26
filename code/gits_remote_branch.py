@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-import gits_logging
 from subprocess import Popen, PIPE
 
 def gits_remote_branch_func(args):

@@ -1,4 +1,3 @@
-import gits_logging
 from subprocess import Popen, PIPE
 
 def gits_diff(args):
