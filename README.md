@@ -6,6 +6,8 @@
 ![GitHub](https://img.shields.io/badge/language-python-blue.svg)
 ![GitHub](https://img.shields.io/badge/language-shell-orange.svg)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5532929.svg)](https://doi.org/10.5281/zenodo.5532929)
+
 ![GitHub issues](https://img.shields.io/github/issues/arjunptm/GITS)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/arjunptm/GITS)
 
