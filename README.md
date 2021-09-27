@@ -1,5 +1,4 @@
-# GITS 
-### GIT Simplified
+# GITS - GIT Simplified
 
 ![GitHub](https://img.shields.io/github/license/arjunptm/GITS)
 [![Build Status](https://travis-ci.com/amolgautam25/GITS.svg?branch=master)](https://travis-ci.com/bhavesh242/GITS)
@@ -12,7 +11,7 @@
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/arjunptm/GITS)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/arjunptm/GITS)
 
-### Welcome, potential developers!
+# Welcome, potential developers!
 GITS, or Git Simplified, is a tool designed to help make git commands easier and more intuitive to use for beginners and advanced users alike.
 This first section should help you familiarize yourself with this project, so you can spend more time improving/adding features instead of trying to learn how our code works.
 
