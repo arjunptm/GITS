@@ -1,11 +1,10 @@
+from mock import patch
+from code import gits_add
+import argparse
 import os
 import sys
 
 sys.path.insert(1, os.getcwd())
-
-import argparse
-from code import gits_add
-from mock import patch
 
 
 @patch("argparse.ArgumentParser.parse_args",

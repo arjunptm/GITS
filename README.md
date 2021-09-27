@@ -1,9 +1,12 @@
 # GITS - GIT Simplified
 
 ![GitHub](https://img.shields.io/github/license/arjunptm/GITS)
-[![Build Status](https://travis-ci.com/amolgautam25/GITS.svg?branch=master)](https://travis-ci.com/bhavesh242/GITS)
+[![Build Status](https://github.com/arjunptm/GITS/workflows/Build%20Status/badge.svg)](https://github.com/arjunptm/GITS/actions)
 ![GitHub](https://img.shields.io/badge/language-python-blue.svg)
 ![GitHub](https://img.shields.io/badge/language-shell-orange.svg)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5532929.svg)](https://doi.org/10.5281/zenodo.5532929)
+[![codecov](https://codecov.io/gh/arjunptm/GITS/branch/master/graph/badge.svg?token=KNQPMEDEH2)](https://codecov.io/gh/arjunptm/GITS)
 
 ![GitHub issues](https://img.shields.io/github/issues/arjunptm/GITS)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/arjunptm/GITS)

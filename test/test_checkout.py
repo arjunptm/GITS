@@ -1,3 +1,5 @@
+from mock import patch, Mock
+from code.gits_checkout import checkout
 import argparse
 import os
 import sys
@@ -5,8 +7,6 @@ import sys
 
 sys.path.insert(1, os.getcwd())
 
-from code.gits_checkout import checkout
-from mock import patch, Mock
 
 def parse_args(args):
     parser = argparse.ArgumentParser()

@@ -1,13 +1,12 @@
+from mock import patch, Mock
+from code import gits_commit
 import argparse
 import os
 import sys
 
 
-
 sys.path.insert(1, os.getcwd())
 
-from code import gits_commit
-from mock import patch, Mock
 
 def parse_args(args):
     parser = argparse.ArgumentParser()
