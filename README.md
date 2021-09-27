@@ -12,16 +12,25 @@
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/arjunptm/GITS)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/arjunptm/GITS)
 
+### Welcome, potential developers!
+GITS, or Git Simplified, is a tool designed to help make git commands easier and more intuitive to use for beginners and advanced users alike.
+This first section should help you familiarize yourself with this project, so you can spend more time improving/adding features instead of trying to learn how our code works.
+
+We heavily rely on the [`argparse`](https://docs.python.org/3/library/argparse.html) module, and the documentation for [`add_argument()`](https://docs.python.org/3/library/argparse.html#argparse.ArgumentParser.add_argument) method will be extremely helpful.
+
+1. [`code`](code) contains all of our working code. The structure is as follows:
+  - [`gits.py`](code/gits.py) is where it all starts. For each feature we support, we have a few corresponding lines that call 
+
 ### Installation Guidelines:
 
 1. Clone the GITS repository <br/>
 2. Navigate inside GITS folder and enter the following command: <br/> `pip install -r requirements.txt` <br/>
 3. Navigate inside the configurations folder and run the folllowing commands: <br/>
-4. The python3 compatible users run the following command: <br/>
+4. If your main method of running `.py` files is `python3 ...`, then run the following command: <br/>
 - `chmod +x python3_project_init.sh` <br/> 
 - `./python3_project_init.sh` <br/> 
    
-   The python or python2 users run the following command:  <br/>
+   If you just use `python ...` then run the following command:  <br/>
 - `chmod +x project_init.sh` <br/> 
 - `./project_init.sh` <br/> 
 
