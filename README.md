@@ -19,7 +19,16 @@ This first section should help you familiarize yourself with this project, so yo
 We heavily rely on the [`argparse`](https://docs.python.org/3/library/argparse.html) module, and the documentation for [`add_argument()`](https://docs.python.org/3/library/argparse.html#argparse.ArgumentParser.add_argument) method will be extremely helpful.
 
 1. [`code`](code) contains all of our working code. The structure is as follows:
-  - [`gits.py`](code/gits.py) is where it all starts. For each feature we support, we have a few corresponding lines that call 
+   - [`gits.py`](code/gits.py) is where it all starts. For each feature we support, we have a few lines that call the corresponding `gits_<commandname>.py`.
+   - `gits_<commandname.>py` is a file describing in detail what each supported command should do. E.g. [`gits_clone.py`](code/gits_clone.py) to clone, and [`gits_add`](code/gits_add.py) to add.
+   - To modify how a command is called, you need to edit [`gits.py`](code/gits.py). To change what a command does, you need to edit `gits_<commandname.>py`.
+   - To add a new command, you need to add corresponding calls and imports to [`gits.py`](code/gits.py), and additionally create a `gits_<commandname.>py` to go with it.
+2. [`configurations`](configurations) contains the files required to install/set-up GITS on your system. Further instructions can be found [below](#installation-guidelines).
+3. [`test`](test) contains all of our test cases. 
+
+Additionally, while you can think of new features to add and more git commands to simplify, we have also left a few issues marked [`good first issue`](https://github.com/arjunptm/GITS/labels/good%20first%20issue) open as a good place to get started from. You may work on these to help you get comfortable with the project to begin with. 
+
+Also check out our [Phase 1 project board](https://github.com/arjunptm/GITS/projects/1) to get a good idea of where each process stands. You may create a copy of this to begin your Phase 2 work.
 
 ### Installation Guidelines:
 
@@ -27,16 +36,15 @@ We heavily rely on the [`argparse`](https://docs.python.org/3/library/argparse.h
 2. Navigate inside GITS folder and enter the following command: <br/> `pip install -r requirements.txt` <br/>
 3. Navigate inside the configurations folder and run the folllowing commands: <br/>
 4. If your main method of running `.py` files is `python3 ...`, then run the following command: <br/>
-- `chmod +x python3_project_init.sh` <br/> 
-- `./python3_project_init.sh` <br/> 
-   
-   If you just use `python ...` then run the following command:  <br/>
-- `chmod +x project_init.sh` <br/> 
-- `./project_init.sh` <br/> 
+  `chmod +x python3_project_init.sh` <br/> 
+  `./python3_project_init.sh` <br/><br/>
+  If you just use `python ...` then run the following command:  <br/>
+  `chmod +x project_init.sh` <br/> 
+  `./project_init.sh` <br/> 
 
 5. Update the bashrc file: <br/>
-- `source ~/.bashrc` <br/>
-6. Run `gits hello_world` from any directory. If you end up getting a welcome msg you're good to go! <br/>
+  `source ~/.bashrc` <br/>
+6. Run `gits hello_world` from any directory. If you end up getting a welcome message you're good to go! <br/>
 
 ### Supported functionality
 
