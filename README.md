@@ -2,7 +2,7 @@
 ### GIT Simplified
 
 ![GitHub](https://img.shields.io/github/license/arjunptm/GITS)
-[![Build Status](https://travis-ci.com/amolgautam25/GITS.svg?branch=master)](https://travis-ci.com/bhavesh242/GITS)
+[![Build Status](https://github.com/arjunptm/GITS/workflows/pytesting.yml/badge.svg)](https://github.com/arjunptm/GITS/actions)
 ![GitHub](https://img.shields.io/badge/language-python-blue.svg)
 ![GitHub](https://img.shields.io/badge/language-shell-orange.svg)
 
