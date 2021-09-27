@@ -9,12 +9,12 @@ def gits_clone_func(args):
         subprocess_command = list()
         subprocess_command.append("git")
         subprocess_command.append("clone")
-        site_url = args.site_url
+        siteurl = args.siteurl
 
-        if len(site_url) == 0:
+        if len(siteurl) == 0:
             pass
         else:
-            subprocess_command.append(site_url)
+            subprocess_command.append(siteurl)
         process = Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process.communicate()
     except Exception as e:
