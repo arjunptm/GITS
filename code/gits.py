@@ -52,11 +52,11 @@ gits_add_subparser.set_defaults(func=gits_add_func)
 
 gits_mv_subparser = subparsers.add_parser('move')
 gits_mv_subparser.add_argument('input_file',
-                                type=str,
-                                help='File to rename')
+                               type=str,
+                               help='File to rename')
 gits_mv_subparser.add_argument('output_file',
-                                type=str,
-                                help='New name of file')
+                               type=str,
+                               help='New name of file')
 gits_mv_subparser.set_defaults(func=gits_mv_func)
 
 gits_commit_subparser = subparsers.add_parser('commit')
@@ -96,7 +96,8 @@ gits_pr_subparser.set_defaults(func=gits_pr_update_func)
 gits_pr_subparser.add_argument('--upstream', nargs='?')
 
 gits_super_reset_subparser = subparsers.add_parser('super-reset')
-gits_super_reset_subparser.add_argument('--name', help="Name of the repository to super reset")
+gits_super_reset_subparser.add_argument(
+    '--name', help="Name of the repository to super reset")
 gits_super_reset_subparser.set_defaults(func=super_reset)
 
 gits_rb_subparser = subparsers.add_parser('rebase', help='sync help')
@@ -104,7 +105,8 @@ gits_rb_subparser.set_defaults(func=gits_rebase)
 
 gits_reset_subparser = subparsers.add_parser('reset', help='sync help')
 gits_reset_subparser.set_defaults(func=gits_reset)
-gits_reset_subparser.add_argument('--branch', required=True, help='branch to be used')
+gits_reset_subparser.add_argument(
+    '--branch', required=True, help='branch to be used')
 
 gits_push_subparser = subparsers.add_parser('push')
 gits_push_subparser.set_defaults(func=gits_push_func)
@@ -128,20 +130,22 @@ gits_add_subparser.add_argument('file_names',
                                 help='all file names')
 gits_add_subparser.set_defaults(func=unstage)
 
-gits_status_subparser=subparsers.add_parser('status')
+gits_status_subparser = subparsers.add_parser('status')
 gits_status_subparser.set_defaults(func=gits_status)
 
-gits_diff_subparser=subparsers.add_parser('diff')
+gits_diff_subparser = subparsers.add_parser('diff')
 gits_diff_subparser.set_defaults(func=gits_diff)
 
-gits_sync_subparser=subparsers.add_parser('sync')
+gits_sync_subparser = subparsers.add_parser('sync')
 gits_sync_subparser.set_defaults(func=gits_sync)
 
 
-
-gits_init_subparser = subparsers.add_parser('init', help='Initialize local git repository')
-gits_init_subparser.add_argument("--bare", action="store_true", help="Omit the working directory and initialize an empty git repository")
-gits_init_subparser.add_argument("--url", help="url for cloning an already existing repo")
+gits_init_subparser = subparsers.add_parser(
+    'init', help='Initialize local git repository')
+gits_init_subparser.add_argument("--bare", action="store_true",
+                                 help="Omit the working directory and initialize an empty git repository")
+gits_init_subparser.add_argument(
+    "--url", help="url for cloning an already existing repo")
 gits_init_subparser.set_defaults(func=gits_init_func)
 
 gits_all_branch_subparser = subparsers.add_parser('all-branch')

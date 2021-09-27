@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-
+import gits_logging
 from subprocess import PIPE
 import subprocess
+
 
 def unstage(args):
     """
@@ -10,18 +11,19 @@ def unstage(args):
     """
 
     try:
-        subprocess_command=list()
+        subprocess_command = list()
         subprocess_command.append("git")
         subprocess_command.append("reset")
         subprocess_command.append("HEAD")
-        file_names=args.file_names
-        total_files=len(file_names)
+        file_names = args.file_names
+        total_files = len(file_names)
         if total_files != 0:
-            for i in range(0,total_files):
+            for i in range(0, total_files):
                 subprocess_command.append(file_names[i])
-        
-            process=subprocess.Popen(subprocess_command,stdout=PIPE, stderr=PIPE)
-            stdout,stderr=process.communicate()
+
+            process = subprocess.Popen(
+                subprocess_command, stdout=PIPE, stderr=PIPE)
+            stdout, stderr = process.communicate()
 
     except Exception as e:
         gits_logging.gits_logger.error("Unstage command caught an exception")
@@ -29,5 +31,5 @@ def unstage(args):
         print("ERROR: gits Unstage command caught an exception")
         print("ERROR: {}".format(str(e)))
         return False
-    
+
     return True

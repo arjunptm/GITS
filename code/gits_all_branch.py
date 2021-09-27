@@ -3,6 +3,7 @@
 
 from subprocess import Popen, PIPE
 
+
 def gits_all_branch_func(args):
     """
     Function to list all the branches.
@@ -17,7 +18,7 @@ def gits_all_branch_func(args):
         process = Popen(subprocess_command, stdout=PIPE, stderr=PIPE)
         stdout, stderr = process.communicate()
         stdout = stdout.decode("utf-8")
-        
+
         branches = list(filter(None, stdout.split("\n")))
         for branch in branches:
             print(branch)
@@ -26,5 +27,5 @@ def gits_all_branch_func(args):
         print("ERROR: gits branch command caught an exception")
         print("ERROR: {}".format(str(e)))
         return False
-    
+
     return True

@@ -1,5 +1,6 @@
 from subprocess import Popen, PIPE
 
+
 def gits_clone_func(args):
     """
     Function to target an existing repository and create a clone, or copy of the target repository.
