@@ -1,12 +1,11 @@
+from mock import patch
+from code.gits_init import gits_init_func
 import argparse
 import sys
 import os
 import shutil
 
 sys.path.insert(1, os.getcwd())
-
-from code.gits_init import gits_init_func
-from mock import patch
 
 
 def remove_file(file):
@@ -15,12 +14,14 @@ def remove_file(file):
     except:
         os.remove(file)
 
+
 def delete_non_pys(path):
     files = os.listdir(path)
     for file in files:
         if "py" not in file:
             remove_file(file)
-        
+
+
 @patch("argparse.ArgumentParser.parse_args",
        return_value=argparse.Namespace(bare=None, amend=True))
 @patch("subprocess.Popen", return_value="anything")
@@ -31,6 +32,7 @@ def test_gits_init_deafult(mock_var1, mock_args):
     test_result = gits_init_func(mock_args)
     delete_non_pys(".")
     assert test_result == True
+
 
 @patch("argparse.ArgumentParser.parse_args",
        return_value=argparse.Namespace(bare=True, amend=True))
