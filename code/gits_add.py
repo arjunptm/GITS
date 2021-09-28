@@ -20,10 +20,7 @@ def gits_add_func(args):
         file_names_list = args.file_names
         total_files = len(file_names_list)
         if total_files == 0:
-            # do nothing
-            # print ("ASDASDASD")
             subprocess_command.append(".")
-            # pass
         else:
             for i in range(0, total_files):
                 subprocess_command.append(file_names_list[i])
