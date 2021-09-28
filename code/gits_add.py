@@ -3,7 +3,7 @@
 
 from subprocess import Popen, PIPE
 
-from code import gits_logging
+import gits_logging
 
 
 def gits_add_func(args):
