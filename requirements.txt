@@ -3,3 +3,8 @@ mock
 coverage
 flake8
 pip
+setuptools
+pyflakes
+iniconfig
+pyparsing
+attrs
