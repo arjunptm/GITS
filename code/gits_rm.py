@@ -16,3 +16,6 @@ def gits_rm_func(args):
     except Exception as e:
         print("ERROR: gits rm command caught an exception")
         print("ERROR: {}".format(str(e)))
+        return False
+
+    return True

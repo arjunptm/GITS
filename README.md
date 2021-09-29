@@ -112,6 +112,8 @@ This command clones a repository into a newly created directory, creates remote-
 
 Note: More functionality are being added to this project. Please refer to the 'issues' tab for more information. In case you want to contribute to this project , please refer to 'Contributing.md' file.
 
+#### gits remove
+This command is used to remove individual files and to remove tracked files from the git index. Additionally, it can be used to remove files from both the staging index and the working directory.
 
 ### pydoc implementation
 We have tried to write as much documentation as possible. You can use pydoc to go through the documentation. 

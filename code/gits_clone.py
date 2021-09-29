@@ -9,7 +9,7 @@ def gits_clone_func(args):
         subprocess_command = list()
         subprocess_command.append("git")
         subprocess_command.append("clone")
-        siteurl = args.siteurl
+        siteurl = args.site_url
 
         if len(siteurl) == 0:
             pass
@@ -20,3 +20,6 @@ def gits_clone_func(args):
     except Exception as e:
         print("ERROR: gits clone command caught an exception")
         print("ERROR: {}".format(str(e)))
+        return False
+
+    return True
