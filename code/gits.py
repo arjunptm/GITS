@@ -24,6 +24,7 @@ from gits_status import gits_status
 from gits_diff import gits_diff
 from gits_sync import gits_sync
 from gits_pull import gits_pull_func
+from gits_rm import gits_rm_func
 
 logger_status = init_gits_logger()
 if not logger_status:
@@ -48,6 +49,11 @@ gits_add_subparser.add_argument('file_names',
                                 help='all file names')
 gits_add_subparser.set_defaults(func=gits_add_func)
 
+gits_mv_subparser = subparsers.add_parser('remove')
+gits_mv_subparser.add_argument('input_file',
+                               type=str,
+                               help='File to remove')
+gits_mv_subparser.set_defaults(func=gits_rm_func)
 
 gits_commit_subparser = subparsers.add_parser('commit')
 gits_commit_subparser.add_argument('-m',
