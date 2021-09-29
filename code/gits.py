@@ -26,6 +26,7 @@ from gits_diff import gits_diff
 from gits_sync import gits_sync
 from gits_pull import gits_pull_func
 from gits_clone import gits_clone_func
+from gits_rm import gits_rm_func
 
 logger_status = init_gits_logger()
 if not logger_status:
@@ -58,6 +59,12 @@ gits_mv_subparser.add_argument('output_file',
                                type=str,
                                help='New name of file')
 gits_mv_subparser.set_defaults(func=gits_mv_func)
+
+gits_rm_subparser = subparsers.add_parser('remove')
+gits_rm_subparser.add_argument('input_file',
+                               type=str,
+                               help='File to remove')
+gits_rm_subparser.set_defaults(func=gits_rm_func)
 
 gits_commit_subparser = subparsers.add_parser('commit', help='commit changes added to the staging')
 gits_commit_subparser.add_argument('-m',
