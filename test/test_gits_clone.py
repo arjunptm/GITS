@@ -13,7 +13,7 @@ def parse_args(args):
 
 
 @patch("argparse.ArgumentParser.parse_args",
-       return_value=argparse.Namespace(site_url="site url"))
+       return_value=argparse.Namespace(site_url="site_url"))
 @patch("subprocess.Popen")
 def test_gits_clone_happy_case(mock_var, mock_args):
     """
