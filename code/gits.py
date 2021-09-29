@@ -60,11 +60,11 @@ gits_mv_subparser.add_argument('output_file',
                                help='New name of file')
 gits_mv_subparser.set_defaults(func=gits_mv_func)
 
-gits_mv_subparser = subparsers.add_parser('rmove')
-gits_mv_subparser.add_argument('input_file',
+gits_rm_subparser = subparsers.add_parser('remove')
+gits_rm_subparser.add_argument('input_file',
                                type=str,
                                help='File to remove')
-gits_mv_subparser.set_defaults(func=gits_rm_func)
+gits_rm_subparser.set_defaults(func=gits_rm_func)
 
 gits_commit_subparser = subparsers.add_parser('commit')
 gits_commit_subparser.add_argument('-m',
