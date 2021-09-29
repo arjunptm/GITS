@@ -33,7 +33,7 @@ Explain the problem and include additional details to help maintainers reproduce
 7. Include screenshots and animated GIFs which show you following the described steps and clearly demonstrate the problem.
 
 
-## Enhancement suggestion process / Feature request Process
+## Extension of project capability suggestion procedure
 
 Bugs are tracked as GitHub issues. You need to create an issue and include all the following details if possible.
 
