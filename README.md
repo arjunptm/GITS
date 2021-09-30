@@ -15,6 +15,8 @@
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/arjunptm/GITS)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/arjunptm/GITS)
 
+[![Alt text](http://i3.ytimg.com/vi/XWzKtZcDmKU/maxresdefault.jpg)](https://www.youtube.com/watch?v=XWzKtZcDmKU)
+
 ## Sitemap
 
 Reading all 3 sections before starting your work will make life a lot easier for the next few weeks!
@@ -22,7 +24,7 @@ Reading all 3 sections before starting your work will make life a lot easier for
 2. [Jump here](#about-the-project) to get information on how this project works
 3. [Jump here](#installation-guidelines) if you want installation instructions
 
-# Welcome, potential developers!
+# Welcome, potential developers! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 GITS, or Git Simplified, is a tool designed to help make git commands easier and more intuitive to use for beginners and advanced users alike.
 This first section should help you familiarize yourself with this project, so you can spend more time improving/adding features instead of trying to learn how our code works.
 <!-- GITS simplifies (makes it human-friendly) many commonly used git commands such as [add](code/gits_add.py), [commit](code/gits_commit.py), [push](code/gits_push.py), and [checkout](code/gits_checkout.py). -->
@@ -56,7 +58,7 @@ The main way of making progress in this project is to expand the range of comman
 
 Additionally, while you can think of new features to add and more git commands to simplify, we have also left a few issues marked [`good first issue`](https://github.com/arjunptm/GITS/labels/good%20first%20issue) open as a good place to get started from. You may work on these to help you get comfortable with the project to begin with. 
 
-Also check out our [Phase 1 project board](https://github.com/arjunptm/GITS/projects/1) to get a good idea of where each process stands. 
+Also check out our [Phase 1 project board](https://github.com/arjunptm/GITS/projects/1) to get a good idea of where each process stands. We also have a [Phase 2 project board](https://github.com/arjunptm/GITS/projects/2) to help you start your project.
 
 Note that if you fork this project to work on it yourself, it won't automatically fork the issues/project boards. You can always come back here to refer to them, and then create a copy in your fork for the Phase 2 work.
 
