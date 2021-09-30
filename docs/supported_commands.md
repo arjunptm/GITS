@@ -70,7 +70,7 @@ This function displays the state of the working directory and the staging area
 #### gits super reset
 Have you ever run into a situation, where you had to clone the repository again ? Yes, this functionality is exactly for that scenario. It will remove the current repository. It will clone it again, and add all the 'remote' to this freshly cloned repository. 
 
-#### sync
+#### gits sync
 This function returns the trunk branch
 
 #### gits unstage
