@@ -31,6 +31,9 @@ Function that creates an empty Git repository or re-initializes an existing one.
 * `gits init: This variant creates a repository with a working directory so you can actually work`
 * `gits init --bare: This variant creates a repository without a working directory`
 
+#### gits logging
+This function initializes gits logger and creates handler to be used consequently
+
 #### gits mv 
 Function that moves/renames a file, while maintaining the file history. Performs operation as similar to git mv command.
 
