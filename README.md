@@ -15,28 +15,70 @@
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/arjunptm/GITS)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/arjunptm/GITS)
 
-# Welcome, potential developers!
+[![Alt text](http://i3.ytimg.com/vi/XWzKtZcDmKU/maxresdefault.jpg)](https://www.youtube.com/watch?v=XWzKtZcDmKU)
+
+## Sitemap
+
+Reading all 3 sections before starting your work will make life a lot easier for the next few weeks!
+1. [Jump here](#welcome-potential-developers) for the easiest Phase 2 start-up guide
+2. [Jump here](#about-the-project) to get information on how this project works
+3. [Jump here](#installation-guidelines) if you want installation instructions
+
+# Welcome, potential developers! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 GITS, or Git Simplified, is a tool designed to help make git commands easier and more intuitive to use for beginners and advanced users alike.
 This first section should help you familiarize yourself with this project, so you can spend more time improving/adding features instead of trying to learn how our code works.
+<!-- GITS simplifies (makes it human-friendly) many commonly used git commands such as [add](code/gits_add.py), [commit](code/gits_commit.py), [push](code/gits_push.py), and [checkout](code/gits_checkout.py). -->
 
-We heavily rely on the [`argparse`](https://docs.python.org/3/library/argparse.html) module, and the documentation for [`add_argument()`](https://docs.python.org/3/library/argparse.html#argparse.ArgumentParser.add_argument) method will be extremely helpful.
-
+<!-- The structure of our repo is as follows:
 1. [`code`](code) contains all of our working code. The structure is as follows:
    - [`gits.py`](code/gits.py) is where it all starts. For each feature we support, we have a few lines that call the corresponding `gits_<commandname>.py`.
    - `gits_<commandname.>py` is a file describing in detail what each supported command should do. E.g. [`gits_clone.py`](code/gits_clone.py) to clone, and [`gits_add`](code/gits_add.py) to add.
    - To modify how a command is called, you need to edit [`gits.py`](code/gits.py). To change what a command does, you need to edit `gits_<commandname.>py`.
    - To add a new command, you need to add corresponding calls and imports to [`gits.py`](code/gits.py), and additionally create a `gits_<commandname.>py` to go with it.
 2. [`configurations`](configurations) contains the files required to install/set-up GITS on your system. Further instructions can be found [below](#installation-guidelines).
-3. [`test`](test) contains all of our test cases. 
+3. [`docs`](docs) has all other supporting documentation.
+4. [`test`](test) contains all of our test cases.  -->
+
+## Repo organization
+The structure of our repo is as follows:
+1. [`code`](code) contains all of our working code. The structure is as follows:
+   - [`gits.py`](code/gits.py) is where it all starts. For each feature we support, we have a few lines that call the corresponding `gits_<commandname>.py`.
+   - `gits_<commandname.>py` is a file describing in detail what each supported command should do. E.g. [`gits_clone.py`](code/gits_clone.py) to clone, and [`gits_add`](code/gits_add.py) to add.
+2. [`configurations`](configurations) contains the files required to install/set-up GITS on your system. Further instructions can be found [below](#installation-guidelines).
+3. [`docs`](docs) has all other supporting documentation.
+4. [`test`](test) contains all of our test cases. 
+
+## How to make progress
+GITS has support for many commonly used git commands such as [add](code/gits_add.py), [commit](code/gits_commit.py), and [push](code/gits_push.py).
+The main way of making progress in this project is to expand the range of commands we support. 
+
+1. To modify how a command is called, you need to edit [`gits.py`](code/gits.py). To change what a command does, you need to edit `gits_<commandname.>py`.
+2. To add a new command, you need to add corresponding calls and imports to [`gits.py`](code/gits.py), and additionally create a `gits_<commandname.>py` to go with it.
+3. Update or add new test files depending on what changes you made.
 
 Additionally, while you can think of new features to add and more git commands to simplify, we have also left a few issues marked [`good first issue`](https://github.com/arjunptm/GITS/labels/good%20first%20issue) open as a good place to get started from. You may work on these to help you get comfortable with the project to begin with. 
 
-Also check out our [Phase 1 project board](https://github.com/arjunptm/GITS/projects/1) to get a good idea of where each process stands. 
+Also check out our [Phase 1 project board](https://github.com/arjunptm/GITS/projects/1) to get a good idea of where each process stands. We also have a [Phase 2 project board](https://github.com/arjunptm/GITS/projects/2) to help you start your project.
 
 Note that if you fork this project to work on it yourself, it won't automatically fork the issues/project boards. You can always come back here to refer to them, and then create a copy in your fork for the Phase 2 work.
 
-### Installation Guidelines:
+## Pre-set tasks
+After forking this repository onto your own account, here are some tasks that you can start off with. You can find the same list with more details under [issues](https://github.com/arjunptm/GITS/issues), and also in [projects](https://github.com/arjunptm/GITS/projects/1).
 
+1. Organizational tasks
+    - Create your Phase 2 project board.
+    - Copy issues from this
+    - Create your own account for third party services (Zenodo, Codecov, etc) and also update their badges in the [readme](README.md).
+2. Development tasks
+    - Add more basic (add link here) commands to GITS.
+    - Add more simplified functionalities to GITS. (Add enhancement issues link here)
+    - Add more test cases for each command / funcionality.
+    - Convert existing functionalities into interactive ones (similar to [`gits_rebase.py`](code/gits_rebase.py)).
+
+# Installation Guidelines:
+Please note that this will run directly on Linux/MacOS. If you are running it on Windows, you will need to install some bash terminal for executing it. We recommend git bash, that comes bundled with [git](https://git-scm.com/downloads) during installation. This works best as having git installed is a prerequisite for running this tool anyway.
+
+Once you have git installed, follow these steps: 
 1. Clone the GITS repository <br/>
 2. Navigate inside GITS folder and enter the following command: <br/> `pip install -r requirements.txt` <br/>
 3. Navigate inside the configurations folder and run the folllowing commands: <br/>
@@ -51,95 +93,43 @@ Note that if you fork this project to work on it yourself, it won't automaticall
   `source ~/.bashrc` <br/>
 6. Run `gits hello_world` from any directory. If you end up getting a welcome message you're good to go! <br/>
 
-### Supported functionality
+# About the project
+This section describes all the features of this project that you would want to be aware of.
 
-#### gits pr_update
-This functionality makes sure that the current branch is able to make a PR without much trouble ( conflict ). It makes sure that the current branch has the latest commit off master branch, and that the local master has all the commits from the upstream master. This helps in reducing merge conflicts
+## About GITS
+We hope for GITS to be used as a complete alternative to git (for most day-to-day use cases). This means two things:
+  - We need to simplify complex actions that require multiple git commands in a sequence.
+  - We also need to support basic git commands, so you won't have to remember whether to use GITS or git everytime you're programming.
 
-#### gits profile
-This functionality allows the user to change the git account quickly with a single command. There are situations when a developer has a personal github account and a enterprise github account as well. Changing between these accounts is a little complicated. This functionality aims to simplify it.
+A full list and explanation on everything we support can be found in [`supported_commands.md`](docs/supported_commands.md).
 
-#### gits rebase 
-This is a highly simplified version of git rebase command. This interactive command asks for the branch that you want to rebase and automatically rebases it off master. This is the most common scenario. The original GIT rebase command is a little un-intuitive and there is always a confusion , about the source branch and the destination branch.  
+We heavily rely on the [`argparse`](https://docs.python.org/3/library/argparse.html) module, and the documentation for [`add_argument()`](https://docs.python.org/3/library/argparse.html#argparse.ArgumentParser.add_argument) method will be extremely helpful.
 
-#### gits reset
-'Reset' intuitively means a HARD reset. This functionality does a HARD reset on your branch, and makes it even with the remote branch. This aims to simplify the confusion between HARD and the SOFT reset.  
+## All the repository BLING
+This repository has many features that make the development process easy and fun. Here's a quick overview:
 
-#### gits set
-This functionality sets the parent branch. 
-
-#### gits upstream
-This functionality changes the upstream with a single command. No need to manually remove the existing upstream, and adding a new upstream. This command will automatically change the upstream for the git repo. If there is any existing upstream , it will be overwritten.
-
-#### gits super reset
-Have you ever run into a situation, where you had to clone the repository again ? Yes, this functionality is exactly for that scenario. It will remove the current repository. It will clone it again, and add all the 'remote' to this freshly cloned repository. 
-
-#### gits add 
-Function that adds files as passed to the gits add command. Performs operation as similar to git add command.
-
-#### gits mv 
-Function that moves/renames a file, while maintaining the file history. Performs operation as similar to git mv command.
-
-#### gits commit
-It is a highly simplified version of git commit command. We are actively working on this functionality such that a commit would fail if the unit tests does not pass. We can specify the tests that need to pass before the commit can actually happen. 
-
-#### gits create_branch
-This automatically checks out a new branch from local master , after pulling all the changes from the remote master to local master. The idea behind this is that this new branch should have all the latest commits before a developer starts working on them.
-
-#### gits all-branch
-This command lists all the branches on both local and remote repositories.
-
-#### gits remote-branch
-This command lists all the branches on remote repository.
-
-#### gits init
-Function that creates an empty Git repository or re-initializes an existing one. There are three versions of this function, 
-* `gits init --url='cloning url': Clones the repository at url at current directory`
-* `gits init: This variant creates a repository with a working directory so you can actually work`
-* `gits init --bare: This variant creates a repository without a working directory`
-
-#### gits push
-This pushes all the local changes of origin to the branch specified. 
-
-#### gits pull
-This pulls the latest content of a remote branch to local branch.
-
-#### gits checkout
-This command switches between two branches. The function takes branch name as input and returns True for successful execution or False otherwise with an exception.
-
-#### gits unstage
-This command moves files from staging area to the working directory. These untracked files will not be considered for the upcoming commits. The function filenames as input to move from staging area to working directory and returns True for successful execution or False with an exception.
-
-#### gits clone
-This command clones a repository into a newly created directory, creates remote-tracking branches for each branch in the cloned repository and creates and checks out an initial branch that is forked from the cloned repository’s currently active branch.
-
-Note: More functionality are being added to this project. Please refer to the 'issues' tab for more information. In case you want to contribute to this project , please refer to 'Contributing.md' file.
-
-#### gits remove
-This command is used to remove individual files and to remove tracked files from the git index. Additionally, it can be used to remove files from both the staging index and the working directory.
+### Github Actions
+Contrary to the popular Travis CI, We've set up the repository architecture to use GitHub actions. If you need any more automation on running test files during pushes or pull requests, we've got you covered! Editing this is easy, and you have the added support of the GitHub [marketplace](https://github.com/marketplace) for many extensions you can add in few simple steps. 
 
 ### pydoc implementation
 We have tried to write as much documentation as possible. You can use pydoc to go through the documentation. 
 For example if you want to go through all the documentation for all files in code/ directory, do the following: 
 
-`cd code`<br>
-`python3 -m pydoc -b `
+1. Switch to the code directory by using `cd code`<br>
+2. Run the pydoc browser-based server `python3 -m pydoc -b `
 
-This will open up a browser and you can see all the files. You can click on a particular file to access the documentation associated with that file.
+This will open up a browser window and you can see all the files. You can click on a particular file to access the documentation associated with that file.
 
-## Style Checker and Analyzer
-We are using flake8 as our style checker and code analyzer. While contributing to this project, make sure you conform to norms dictated by flake8
-### Flake8 
-<b>Installation</b>
-- `python<version> -m pip install flake8`
+### Style Checker and Analyzer
+We are using flake8 / pep8 as our style checker and code analyzer. While contributing to this project, make sure you conform to norms dictated by flake8. While our GitHub actions automatically run flake8 tests, you may also run it locally to check for inconsistencies before pushing your code.
 
-If you want Flake8 to be installed for your default Python installation, you can instead use:
-- `python -m pip install flake8`
-
- <b>Using Flake8</b> 
- <br/>To start using Flake8, open an interactive shell and run one of the following,
-- `flake8 path/to/code/to/check.py`
-- `flake8 path/to/code/`
+1. Install flake8
+    - `python -m pip install flake8` to install flake8 for your default python installation.
+    - Or, `python<version> -m pip install flake8` to install it to a specific version.
+2. Using Flake8
+    - To start using Flake8, open an interactive shell and run one of the following,
+    - `flake8 path/to/code/to/check.py`
+    - `flake8 path/to/code/`
 
 This repository is made for CSC 510 Software Engineering Course at NC State University.
 
