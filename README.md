@@ -93,6 +93,12 @@ Once you have git installed, follow these steps:
   `source ~/.bashrc` <br/>
 6. Run `gits hello_world` from any directory. If you end up getting a welcome message you're good to go! <br/>
 
+If you wish to reset the project, perform the following actions.
+1. Go to your home directory (default is `users/name/`)
+2. Delete `.gits` folder
+3. Open `.bashrc` and delete the lines pertaining to GITS.
+4. Now you can repeat the installation guidelines to get a fresh version of GITS.
+
 # About the project
 This section describes all the features of this project that you would want to be aware of.
 
