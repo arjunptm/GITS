@@ -4,27 +4,41 @@ The order in here is as per the files in code/
 
 #### gits add 
 Function that adds files as passed to the gits add command. Performs operation as similar to git add command.
+<br />To add all files changed/ added/ deleted in the current directory and sub-directories to the staging area. 
+<br />Specify the list of files to add as an argument 
+
+`gits add [list of file names to add]`
 
 #### gits all-branch
 This command lists all the branches on both local and remote repositories.
 
+`gits all-branch`
+
 #### gits checkout
 This command switches between two branches. The function takes branch name as input and returns True for successful execution or False otherwise with an exception.
+
+`gits checkout branch-name`
 
 #### gits clone
 This command clones a repository into a newly created directory, creates remote-tracking branches for each branch in the cloned repository and creates and checks out an initial branch that is forked from the cloned repository’s currently active branch.
 
 Note: More functionality are being added to this project. Please refer to the 'issues' tab for more information. In case you want to contribute to this project , please refer to 'Contributing.md' file.
 
+`gits clone site_url`
+
 #### gits commit
 It is a highly simplified version of git commit command. We are actively working on this functionality such that a commit would fail if the unit tests does not pass. We can specify the tests that need to pass before the commit can actually happen.
+
+`gits commit -m 'commit message' [--amend 'amend message']`
 
 #### gits create_branch
 This automatically checks out a new branch from local master , after pulling all the changes from the remote master to local master. The idea behind this is that this new branch should have all the latest commits before a developer starts working on them.
 
+`gits create -b 'Branch name to create"`
 #### gits diff
 This is a function to analyze the current state of a Git repo. It shows difference commits, branches, files and more. 
 
+`gits diff`
 #### gits init
 Function that creates an empty Git repository or re-initializes an existing one. There are three versions of this function, 
 * `gits init --url='cloning url': Clones the repository at url at current directory`
