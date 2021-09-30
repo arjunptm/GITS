@@ -133,7 +133,7 @@ We are using flake8 / pep8 as our style checker and code analyzer. While contrib
 
 This repository is made for CSC 510 Software Engineering Course at NC State University.
 
-Group 5 Team Members: 
+# Group 16 Team Members: 
 
 * Rohan Prabhune
 * Swetha Gavini
