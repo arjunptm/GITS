@@ -141,8 +141,10 @@ This repository is made for CSC 510 Software Engineering Course at NC State Univ
 
 # Group 16 Team Members: 
 
-* Rohan Prabhune
-* Swetha Gavini
-* Arjun Madhusudan
-* Ramya Sai Mullapudi
-* Krishna Saurabh
+* Rohan Prabhune | rjprabhu@ncsu.edu
+* Swetha Gavini | lgavini@ncsu.edu
+* Arjun Madhusudan | amadhus2@ncsu.edu
+* Ramya Sai Mullapudi | rmullap@ncsu.edu
+* Krishna Saurabh | kvankad@ncsu.edu
+
+The same 5 names consist of development, as well as continuous support. Feel free to reach out to any of us if you ever find yourself in a deep dark hole leading nowhere.
