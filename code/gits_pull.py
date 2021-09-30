@@ -4,8 +4,15 @@ from subprocess import Popen, PIPE
 
 def gits_pull_func(args):
     """
-    Function to pull the latest content of a remote branch to local branch. 
+    ###########################
+    Function: gits_pull_func
+    Description: Function to pull the latest content of a remote branch to local branch.
         Function similar to git pull command
+    Inputs:
+         - The branch you want to pull from
+    Outputs:
+         - Returns false if there is any exception else true
+    ###########################
     """
     try:
         subprocess_command = list()

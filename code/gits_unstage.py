@@ -6,8 +6,15 @@ import subprocess
 
 def unstage(args):
     """
-    Function that moves files from staging area to the working directory.
-    Untracked files will not be considered for the upcoming commits.
+    ###########################
+    Function: unstage
+    Description: Function that moves files from staging area to the working directory.
+        Untracked files will not be considered for the upcoming commits.
+    Inputs:
+         - List of files to unstage from the staging area
+    Outputs:
+         - Returns false if there is any exception else true
+    ###########################
     """
 
     try:

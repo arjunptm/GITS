@@ -3,9 +3,16 @@ from subprocess import Popen, PIPE
 
 def checkout(args):
     """
-    Function that checks out to the branch specified.
-    Gives error and suggests to create the branch if not found.
-    Performs operation as similar to git checkout command
+    ###########################
+    Function: checkout
+    Description: Function that checks out to the branch specified.
+        Gives error and suggests to create the branch if not found.
+        Performs operation as similar to git checkout command
+    Inputs:
+         - The branch you want to checkout to
+    Outputs:
+         - Returns false if there is any exception else true
+    ###########################
     """
     try:
         # checkout to given branch
