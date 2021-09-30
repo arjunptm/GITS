@@ -3,8 +3,15 @@ from subprocess import Popen, PIPE
 
 def gits_diff(args):
     """
-    Function to analyze the current state of a Git repo. It shows difference commits, branches, files and more. 
-    Performs operation as similar to git diff command
+    ###########################
+    Function: gits_diff
+    Description: Function to analyze the current state of a Git repo. It shows difference commits, branches, files and more.
+        Performs operation as similar to git diff command
+    Inputs: None
+    Outputs:
+        - display the difference commits, branches, files and more.
+        - Returns false if there is any exception else true
+    ###########################
     """
     print("Welcome to git diff")
     try:

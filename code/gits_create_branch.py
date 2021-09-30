@@ -5,8 +5,15 @@ from subprocess import Popen, PIPE
 
 def create_branch(args):
     """
-    Function that creates a new local branch from local master after updating local master from remote master. 
-    The idea here is that the new branch should have all the latest commits.
+    ###########################
+    Function: create_branch
+    Description: Function that creates a new local branch from local master after updating local master from remote master.
+        The idea here is that the new branch should have all the latest commits.
+    Inputs:
+         - Branch name to create
+    Outputs:
+         - Returns false if there is any exception else true
+    ###########################
     """
     try:
         # checkout master first

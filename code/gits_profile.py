@@ -5,9 +5,18 @@ from subprocess import PIPE
 
 def gits_set_profile(args):
     """
-    This functionality allows the user to change the git account quickly with a single command.
-    There are situations when a developer has a personal github account and a enterprise github account as well.
-    Changing between these accounts is a little complicated. This functionality aims to simplify it.
+    ###########################
+    Function: gits_set_profile
+    Description: This functionality allows the user to change the git account quickly with a single command.
+        There are situations when a developer has a personal github account and a enterprise github account as well.
+        Changing between these accounts is a little complicated. This functionality aims to simplify it.
+    Inputs:
+         - Email to be used
+         - Username to be used
+    Outputs:
+         - Returns false if there is any exception else true
+    ###########################
+
     """
     # print(args.email)
     # print("Hello from GITS Commandline Tools-Profile")
