@@ -16,7 +16,7 @@ but nevertheless, here is a track record that everyone is contributing a lot)|3|
 | Use of version control tools|3|used git projects, pull requests, issues, discussions, actions, reviews, etc
 |Use of  style checkers |3|https://github.com/arjunptm/GITS/blob/master/.github/workflows/Build%20Status.yml <br/> implemented Flake8 linting
 | Use of code  formatters. |3|https://github.com/arjunptm/GITS/blob/master/.github/workflows/Build%20Status.yml
-| Use of syntax checkers. |3|https://github.com/arjunptm/GITS/blob/master/.github/workflows/Build%20Status.yml<br/>https://github.com/arjunptm/GITS/runs/3760999810?check_suite_focus=true
+| Use of syntax checkers. |3|https://github.com/arjunptm/GITS/blob/master/.github/workflows/Build%20Status.yml <br/> https://github.com/arjunptm/GITS/runs/3760999810?check_suite_focus=true
 | Use of code coverage |3|https://github.com/arjunptm/GITS/blob/master/.github/workflows/Build%20Status.yml
 | other automated analysis tools|3|https://github.com/arjunptm/GITS/blob/master/.github/workflows/Build%20Status.yml
 | test cases exist|3|https://github.com/arjunptm/GITS/tree/master/test
@@ -51,10 +51,10 @@ The following points are from the Online sustainability evaluation form
 |Do you provide troubleshooting information that describes the symptoms and step-by-step solutions for problems and error messages?|Yes|Mentioned in readme.md
 |If your software can be used as a library, package or service by other software, do you provide comprehensive API documentation?|Yes|Pydoc implemented
 |Do you store your documentation under revision control with your source code?|Yes|Present in github in markdown files
-|Do you publish your release history e.g. release data, version numbers, key features of each release etc. on your web site or in your documentation?||
+|Do you publish your release history e.g. release data, version numbers, key features of each release etc. on your web site or in your documentation?|Yes|https://github.com/arjunptm/GITS/releases
 |Does your software describe how a user can get help with using your software?|Yes|gits --help
-|Does your website and documentation describe what support, if any, you provide to users and developers?||
-|Does your project have an e-mail address or forum that is solely for supporting users?||
-|Are e-mails to your support e-mail address received by more than one person?||
+|Does your website and documentation describe what support, if any, you provide to users and developers?|Yes|Users and Devs can contact us using our emails
+|Does your project have an e-mail address or forum that is solely for supporting users?|Yes|Emails provided of team members
+|Are e-mails to your support e-mail address received by more than one person?|Yes|All members can be reached out to
 |Does your project have a ticketing system to manage bug reports and feature requests?|Yes|GitHub issues to track manage and assign issues
 |Is your project's ticketing system publicly visible to your users, so they can view bug reports and feature requests?|Yes|Issues are public in github
