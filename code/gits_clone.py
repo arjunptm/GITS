@@ -3,7 +3,14 @@ from subprocess import Popen, PIPE
 
 def gits_clone_func(args):
     """
-    Function to target an existing repository and create a clone, or copy of the target repository.
+    ###########################
+    Function: gits_clone_func
+    Description: Function to target an existing repository and create a clone, or copy of the target repository.
+    Inputs:
+         - The site url to clone from
+    Outputs:
+         - Returns false if there is any exception else true
+    ###########################
     """
     try:
         subprocess_command = list()

@@ -4,8 +4,17 @@ from subprocess import PIPE
 
 def upstream(args):
     """
-    Function that modifies the upstream repository. It will set upstream for a local branch to a remote branch.
-    It can also be used to set upstream for a remote branch to the original branch in case of a forked repo.
+    ###########################
+    Function: upstream
+    Description: Function that modifies the upstream repository. It will set upstream for a local branch to a remote branch.
+        It can also be used to set upstream for a remote branch to the original branch in case of a forked repo.
+    Inputs:
+         - The remote branch name
+         - The local branch name
+         - The upstream branch name
+    Outputs:
+         - Returns false if there is any exception else true
+    ###########################
     """
     try:
         # Case of adding upstream to a local branch.

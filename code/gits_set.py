@@ -7,7 +7,14 @@ from pathlib import Path
 
 def gits_set_func(args):
     """
-    Function that is used to set important environment variables
+    ###########################
+    Function: gits_set_func
+    Description: Function that is used to set important environment variables
+    Inputs:
+         - Git parent branch
+    Outputs:
+         - Returns false if there is any exception else true
+    ###########################
     """
     try:
         if args.parent:

@@ -2,8 +2,15 @@ from subprocess import Popen, PIPE
 
 def gits_rm_func(args):
     """
-    Function to remove a file, but without losing the changelog/history
+    ###########################
+    Function: gits_set_func
+    Description: Function to remove a file, but without losing the changelog/history
     of that file.
+    Inputs:
+         - File name to remove
+    Outputs:
+         - Returns false if there is any exception else true
+    ###########################
     """
     try:
         subprocess_command = list()

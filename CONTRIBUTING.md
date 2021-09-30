@@ -46,7 +46,7 @@ Bugs are tracked as GitHub issues. You need to create an issue and include all t
 
  
 ## Style Checker and Analyzer
-We are using flake9 as our style checker and code analyzer. While contrivuting to this project, make sure you conform to norms dictated by flake8
+We are using flake8 as our style checker and code analyzer. While contrivuting to this project, make sure you conform to norms dictated by flake8
 ### Flake8 
 <b>Installation</b>
 - `python<version> -m pip install flake8`

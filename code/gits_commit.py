@@ -5,9 +5,17 @@ from subprocess import Popen, PIPE
 
 def gits_commit_func(args):
     """
-    Function that commit files as staged in the git command line internface
-    Performs operation as similar to git commit command.
-    Future additions : user can specify if the commit should be rejected , if the unit test fails.
+    ###########################
+    Function: gits_commit_func
+    Description: Function that commit files as staged in the git command line interface
+        Performs operation as similar to git commit command.
+        Future additions : user can specify if the commit should be rejected , if the unit test fails for that file.
+    Inputs:
+         - Commit message (required)
+         - amend message (optional)
+    Outputs:
+         - Returns false if there is any exception else true
+    ###########################
     """
     try:
         subprocess_command = list()
