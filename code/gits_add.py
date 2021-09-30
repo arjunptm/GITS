@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 
-import gits_logging
+
 from subprocess import Popen, PIPE
+
+import gits_logging
 
 
 def gits_add_func(args):

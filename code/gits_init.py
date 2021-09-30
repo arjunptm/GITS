@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import gits_logging
 from subprocess import Popen, PIPE
 
 

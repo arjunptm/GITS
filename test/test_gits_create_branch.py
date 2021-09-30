@@ -1,10 +1,9 @@
+from mock import patch, Mock
+from code import gits_create_branch
+import argparse
 import os
 import sys
 sys.path.insert(1, os.getcwd())
-
-import argparse
-import gits_create_branch
-from mock import patch, Mock
 
 
 @patch("argparse.ArgumentParser.parse_args", return_value=argparse.Namespace(b="branch name"))

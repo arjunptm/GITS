@@ -1,17 +1,18 @@
 # Contributing
 
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. 
+Contributions of features, and enhancements to this repository must be created in "issues", 
+marked with appropriate flag and consensusly discussed among the group before making changes to the stable code base.
 
-Please note we have a code of conduct (CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
+
+We have a code of conduct (CODE_OF_CONDUCT.md), please follow it in all your interactions with the project.
 
 ## Pull Request Process
 
-1. Maintain GITS project quality.
-2. Should have appropriate ISSUE linked with the Pull request.
-3. The PR should be assigned to the indiividual requesting a merge.
-4. The Reviewers must approve the pull request before merge the code.
-5. The description should be updated as to what has been asked in the issue.
+1. Persist GITS project quality.
+2. Link the ISSUE appropriately with the Pull request.
+3. Request a PR to all the team members. The reviewer should not be the same as PR owner.
+4. The reviewers must approve the pull request before merge the code. If not approved, discuss with comments to address the issue.
+5. An appropriate issue description maintains quality of the project.
 6. All the development code should accompany unit test cases to suppor the validation results.
 7. Travis Builds should be passing while the code is generated.
 8. The development code should be style checked, well formatted and syntax error free. Use of pep8, autoflake8 and flake8 tools will enable the users to get the required code quality.
@@ -32,7 +33,7 @@ Explain the problem and include additional details to help maintainers reproduce
 7. Include screenshots and animated GIFs which show you following the described steps and clearly demonstrate the problem.
 
 
-## Enhancement suggestion process / Feature request Process
+## Extension of project capability suggestion procedure
 
 Bugs are tracked as GitHub issues. You need to create an issue and include all the following details if possible.
 
