@@ -39,6 +39,7 @@ jobs:
     - name: push isort changes
       uses: ad-m/github-push-action@v0.5.0
       with:
+        github_token: ${{ secrets.GH_ACCESS_TOKEN }}
         branch: ${{ github.ref }}
     - name: Generate coverage report
       run: |
