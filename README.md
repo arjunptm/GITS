@@ -43,7 +43,7 @@ This first section should help you familiarize yourself with this project, so yo
 The structure of our repo is as follows:
 1. [`code`](code) contains all of our working code. The structure is as follows:
    - [`gits.py`](code/gits.py) is where it all starts. For each feature we support, we have a few lines that call the corresponding `gits_<commandname>.py`.
-   - `gits_<commandname.>py` is a file describing in detail what each supported command should do. E.g. [`gits_clone.py`](code/gits_clone.py) to clone, and [`gits_add`](code/gits_add.py) to add.
+   - `gits_<commandname.>py` is a file describing in detail what each supported command should do. E.g. [`gits_clone.py`](code/gits_clone.py) to clone, and [`gits_add.py`](code/gits_add.py) to add.
 2. [`configurations`](configurations) contains the files required to install/set-up GITS on your system. Further instructions can be found [below](#installation-guidelines).
 3. [`docs`](docs) has all other supporting documentation.
 4. [`test`](test) contains all of our test cases. 
@@ -70,8 +70,8 @@ After forking this repository onto your own account, here are some tasks that yo
     - Copy issues from this
     - Create your own account for third party services (Zenodo, Codecov, etc) and also update their badges in the [readme](README.md).
 2. Development tasks
-    - Add more basic (add link here) commands to GITS.
-    - Add more simplified functionalities to GITS. (Add enhancement issues link here)
+    - Add more [basic commands](https://github.com/arjunptm/GITS/labels/basic%20feature) to GITS.
+    - Add more [simplified functionalities](https://github.com/arjunptm/GITS/labels/advanced%20feature) to GITS.
     - Add more test cases for each command / funcionality.
     - Convert existing functionalities into interactive ones (similar to [`gits_rebase.py`](code/gits_rebase.py)).
 
