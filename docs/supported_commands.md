@@ -1,5 +1,7 @@
 ### Supported functionality
 
+The order in here is as per the files in code/
+
 #### gits add 
 Function that adds files as passed to the gits add command. Performs operation as similar to git add command.
 
@@ -19,6 +21,9 @@ It is a highly simplified version of git commit command. We are actively working
 
 #### gits create_branch
 This automatically checks out a new branch from local master , after pulling all the changes from the remote master to local master. The idea behind this is that this new branch should have all the latest commits before a developer starts working on them.
+
+#### gits diff
+This is a function to analyze the current state of a Git repo. It shows difference commits, branches, files and more. 
 
 #### gits init
 Function that creates an empty Git repository or re-initializes an existing one. There are three versions of this function, 
