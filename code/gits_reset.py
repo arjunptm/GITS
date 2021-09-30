@@ -4,8 +4,15 @@ from subprocess import PIPE
 
 def gits_reset(args):
     """
-    'Reset' intuitively means a HARD reset. This functionality does a HARD reset on your branch, and makes it even with the remote branch.
-    This aims to simplify the confusion between HARD and the SOFT reset.
+    ###########################
+    Function: gits_reset
+    Description: 'Reset' intuitively means a HARD reset. This functionality does a HARD reset on your branch, and makes it even with the remote branch.
+        This aims to simplify the confusion between HARD and the SOFT reset.
+    Inputs:
+         - Branch name to reset
+    Outputs:
+         - Returns false if there is any exception else true
+    ###########################
     """
     print("Hello from GITS command line tools- GITS reset")
     try:

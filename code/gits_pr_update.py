@@ -3,13 +3,18 @@ from subprocess import PIPE
 
 
 def gits_pr_update_func(args):
-    # print(args)
-    # print("Hello from GITS command line tools- PR Update")
-    # flag = 0
     """
-    This functionality makes sure that the current branch is able to make a PR without much trouble ( conflict ). 
-    It makes sure that the current branch has the latest commit off master branch,
-    and that the local master has all the commits from the remote or upstream master. This helps in reducing merge conflicts.
+    ###########################
+    Function: gits_pr_update_func
+    Description: This functionality makes sure that the current branch is able to make a PR without much trouble ( conflict ).
+        It makes sure that the current branch has the latest commit off master branch,
+        and that the local master has all the commits from the remote or upstream master. This helps in reducing merge conflicts.
+    Inputs:
+         - The upstream to be set
+    Outputs:
+         - Returns false if there is any exception else true
+    ###########################
+
     """
     try:
         Untracked_file_check_status = list()

@@ -4,8 +4,16 @@ from subprocess import Popen, PIPE
 
 def gits_mv_func(args):
     """
-    Function to rename a file, but without losing the changelog/history
+    ###########################
+    Function: gits_mv_func
+    Description: Function to rename a file, but without losing the changelog/history
     of that file.
+    Inputs:
+         - File to rename
+         - New name of the file
+    Outputs:
+         - Returns false if there is any exception else true
+    ###########################
     """
     try:
         subprocess_command = list()

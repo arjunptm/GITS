@@ -7,9 +7,16 @@ import shutil
 
 def super_reset(args):
     """
-    Function that removes the local repository and does a fresh clone.
-    This command should be run in the directory which consists your git repository.
-    It takes the name of the git repository as a parameter
+    ###########################
+    Function: super_reset
+    Description: Function that removes the local repository and does a fresh clone.
+        This command should be run in the directory which consists your git repository.
+        It takes the name of the git repository as a parameter
+    Inputs:
+         - Name of the repository to reset
+    Outputs:
+         - Returns false if there is any exception else true
+    ###########################
     """
     try:
         if not args.name:

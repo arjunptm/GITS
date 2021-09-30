@@ -4,8 +4,16 @@ from subprocess import Popen, PIPE
 
 def gits_init_func(args):
     """
-    Function that creates an empty Git repository or re-initializes an existing one.
-    This function is similar to git init command.
+    ###########################
+    Function: gits_init_func
+    Description: Function that creates an empty Git repository or re-initializes an existing one.
+        This function is similar to git init command.
+    Inputs:
+        - url to initialize from an existing repository
+        - flag(--bare) to setup an empty repository
+    Outputs:
+        - Returns false if there is any exception else true
+    ###########################
     """
     try:
         subprocess_command = list()

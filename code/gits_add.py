@@ -8,10 +8,15 @@ import gits_logging
 
 def gits_add_func(args):
     """
-    Function that adds files as passed
-    to the gits add command.
-    Performs operation as similar to git
-    add command
+    ###########################
+    Function: gits_add_func
+    Description:  Function that adds files as passed to the gits add command.
+    Performs operation as similar to git add command
+    Inputs:
+         - list of file names/paths to add to staging area
+    Outputs:
+         - Returns false if there is any exception else true
+    ###########################
     """
     try:
         subprocess_command = list()
@@ -20,10 +25,7 @@ def gits_add_func(args):
         file_names_list = args.file_names
         total_files = len(file_names_list)
         if total_files == 0:
-            # do nothing
-            # print ("ASDASDASD")
             subprocess_command.append(".")
-            # pass
         else:
             for i in range(0, total_files):
                 subprocess_command.append(file_names_list[i])
