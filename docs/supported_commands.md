@@ -51,41 +51,55 @@ This function initializes gits logger and creates handler to be used consequentl
 #### gits mv 
 Function that moves/renames a file, while maintaining the file history. Performs operation as similar to git mv command.
 
+`gits move input_file output_file`
 #### gits profile
 This functionality allows the user to change the git account quickly with a single command. There are situations when a developer has a personal github account and a enterprise github account as well. Changing between these accounts is a little complicated. This functionality aims to simplify it.
 
+`gits profile --email EMAIL --name NAME`
 #### gits pull
 This pulls the latest content of a remote branch to local branch.
 
+`gits pull`
 #### gits push
 This pushes all the local changes of origin to the branch specified. 
 
+`gits push`
 #### gits rebase 
 This is a highly simplified version of git rebase command. This interactive command asks for the branch that you want to rebase and automatically rebases it off master. This is the most common scenario. The original GIT rebase command is a little un-intuitive and there is always a confusion , about the source branch and the destination branch. 
 
+`gits rebase`
 #### gits remote-branch
 This command lists all the branches on remote repository.
 
+`gits remote-branch`
 #### gits reset
 'Reset' intuitively means a HARD reset. This functionality does a HARD reset on your branch, and makes it even with the remote branch. This aims to simplify the confusion between HARD and the SOFT reset. 
 
+`gits reset --branch 'branch name to reset'`
 #### gits remove
 This command is used to remove individual files and to remove tracked files from the git index. Additionally, it can be used to remove files from both the staging index and the working directory.
 
+`gits remove file_name`
 #### gits set
 This functionality sets the parent branch. 
 
 #### gits upstream
 This functionality changes the upstream with a single command. No need to manually remove the existing upstream, and adding a new upstream. This command will automatically change the upstream for the git repo. If there is any existing upstream , it will be overwritten.
 
+`gits upstream [--remote REMOTE] [--local LOCAL] [--upstream UPSTREAM]`
 #### gits status
 This function displays the state of the working directory and the staging area
 
+`gits status`
 #### gits super reset
 Have you ever run into a situation, where you had to clone the repository again ? Yes, this functionality is exactly for that scenario. It will remove the current repository. It will clone it again, and add all the 'remote' to this freshly cloned repository. 
 
+`gits super-reset --name 'name of the git repository'`
 #### gits sync
 This function returns the trunk branch
 
+`gits sync`
 #### gits unstage
 This command moves files from staging area to the working directory. These untracked files will not be considered for the upcoming commits. The function filenames as input to move from staging area to working directory and returns True for successful execution or False with an exception.
+
+`gits unstage [file names to unstage]`
