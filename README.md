@@ -98,7 +98,7 @@ We hope for GITS to be used as a complete alternative to git (for most day-to-da
   - We need to simplify complex actions that require multiple git commands in a sequence.
   - We also need to support basic git commands, so you won't have to remember whether to use GITS or git everytime you're programming.
 
-A full list and explanation on everything we support can be found in [`supported_commands.md`](docs/supported_commands.md).
+**A full list and explanation on everything we support can be found in [`supported_commands.md`](docs/supported_commands.md).**
 
 We heavily rely on the [`argparse`](https://docs.python.org/3/library/argparse.html) module, and the documentation for [`add_argument()`](https://docs.python.org/3/library/argparse.html#argparse.ArgumentParser.add_argument) method will be extremely helpful.
 
