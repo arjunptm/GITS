@@ -27,17 +27,6 @@ Reading all 3 sections before starting your work will make life a lot easier for
 # Welcome, potential developers! <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 GITS, or Git Simplified, is a tool designed to help make git commands easier and more intuitive to use for beginners and advanced users alike.
 This first section should help you familiarize yourself with this project, so you can spend more time improving/adding features instead of trying to learn how our code works.
-<!-- GITS simplifies (makes it human-friendly) many commonly used git commands such as [add](code/gits_add.py), [commit](code/gits_commit.py), [push](code/gits_push.py), and [checkout](code/gits_checkout.py). -->
-
-<!-- The structure of our repo is as follows:
-1. [`code`](code) contains all of our working code. The structure is as follows:
-   - [`gits.py`](code/gits.py) is where it all starts. For each feature we support, we have a few lines that call the corresponding `gits_<commandname>.py`.
-   - `gits_<commandname.>py` is a file describing in detail what each supported command should do. E.g. [`gits_clone.py`](code/gits_clone.py) to clone, and [`gits_add.py`](code/gits_add.py) to add.
-   - To modify how a command is called, you need to edit [`gits.py`](code/gits.py). To change what a command does, you need to edit `gits_<commandname.>py`.
-   - To add a new command, you need to add corresponding calls and imports to [`gits.py`](code/gits.py), and additionally create a `gits_<commandname.>py` to go with it.
-2. [`configurations`](configurations) contains the files required to install/set-up GITS on your system. Further instructions can be found [below](#installation-guidelines).
-3. [`docs`](docs) has all other supporting documentation.
-4. [`test`](test) contains all of our test cases.  -->
 
 ## Repo organization
 The structure of our repo is as follows:
@@ -56,20 +45,22 @@ The main way of making progress in this project is to expand the range of comman
 2. To add a new command, you need to add corresponding calls and imports to [`gits.py`](code/gits.py), and additionally create a `gits_<commandname.>py` to go with it.
 3. Update or add new test files depending on what changes you made.
 
-Additionally, while you can think of new features to add and more git commands to simplify, we have also left a few issues marked [`good first issue`](https://github.com/arjunptm/GITS/labels/good%20first%20issue) open as a good place to get started from. You may work on these to help you get comfortable with the project to begin with. 
+<!-- Additionally, while you can think of new features to add and more git commands to simplify, we have also left a few issues marked [`good first issue`](https://github.com/arjunptm/GITS/labels/good%20first%20issue) open as a good place to get started from. You may work on these to help you get comfortable with the project to begin with.  -->
 
-Also check out our [Phase 1 project board](https://github.com/arjunptm/GITS/projects/1) to get a good idea of where each process stands. We also have a [Phase 2 project board](https://github.com/arjunptm/GITS/projects/2) to help you start your project.
+<!-- Also check out our [Phase 1 project board](https://github.com/arjunptm/GITS/projects/1) to get a good idea of where each process stands. We also have a [Phase 2 project board](https://github.com/arjunptm/GITS/projects/2) to help you start your project. -->
 
-Note that if you fork this project to work on it yourself, it won't automatically fork the issues/project boards. You can always come back here to refer to them, and then create a copy in your fork for the Phase 2 work.
+<!-- Note that if you fork this project to work on it yourself, it won't automatically fork the issues/project boards. You can always come back here to refer to them, and then create a copy in your fork for the Phase 2 work. -->
 
-## Pre-set tasks
-After forking this repository onto your own account, here are some tasks that you can start off with. You can find the same list with more details under [issues](https://github.com/arjunptm/GITS/issues), and also in [projects](https://github.com/arjunptm/GITS/projects/1).
+## Your first tasks
+After forking this repository onto your own account, here are some tasks that you can start off with.
 
 1. Organizational tasks
-    - Create your Phase 2 project board.
-    - Copy issues from this
+    - Create your own version of [Phase 2 project board](https://github.com/arjunptm/GITS/projects/2).
+    - Copy issues from this repo to your fork. (Forking doesn't carry over issues and projects, so do them manually)
     - Create your own account for third party services (Zenodo, Codecov, etc) and also update their badges in the [readme](README.md).
+
 2. Development tasks
+    - Check the [`good first issue`](https://github.com/arjunptm/GITS/labels/good%20first%20issue) label for easy settling-in tasks.
     - Add more [basic commands](https://github.com/arjunptm/GITS/labels/basic%20feature) to GITS.
     - Add more [simplified functionalities](https://github.com/arjunptm/GITS/labels/advanced%20feature) to GITS.
     - Add more test cases for each command / funcionality.
