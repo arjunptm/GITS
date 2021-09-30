@@ -11,8 +11,9 @@ def gits_pull_func(args):
         subprocess_command = list()
         subprocess_command.append("git")
         subprocess_command.append("pull")
+        subprocess_command.append("origin")
 
-        print('Enter the branch you want to pull')
+        print ('Enter the branch you want to pull from:')
         branch = input()
 
         subprocess_command.append(branch)
